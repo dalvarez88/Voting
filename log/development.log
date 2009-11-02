@@ -1,0 +1,254 @@
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-10-25 11:07:38) [GET]
+Rendering home/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/home/index]
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2009-11-02 15:49:02) [GET]
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+Completed in 99ms (View: 13, DB: 0) | 200 OK [http://localhost/rails/info/properties]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-02 15:49:13) [GET]
+Rendering home/index
+Completed in 18ms (View: 17, DB: 0) | 200 OK [http://localhost/home/index]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-02 16:25:28) [GET]
+Rendering home/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-02 16:28:38) [GET]
+Rendering home/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-02 16:31:01) [GET]
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-02 16:32:20) [GET]
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-02 16:32:39) [GET]
+Rendering home/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-02 16:37:35) [GET]
+Rendering home/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-02 16:38:13) [GET]
+Rendering home/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-02 16:38:34) [GET]
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-02 16:46:54) [GET]
+Rendering home/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-02 16:47:25) [GET]
+Rendering home/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-02 16:47:47) [GET]
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-02 16:48:02) [GET]
+Rendering home/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-02 16:48:11) [GET]
+Rendering home/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-02 16:48:33) [GET]
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-02 16:58:29) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 92ms (View: 91, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-02 16:58:55) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-02 16:59:02) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-02 16:59:25) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-02 16:59:43) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-02 16:59:49) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-02 17:08:02) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-02 17:08:19) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 64ms (View: 63, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-02 17:08:59) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-02 17:11:33) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-02 17:12:35) [GET]
+Rendering template within layouts/application
+Rendering home/index
+
+ActionView::TemplateError (undefined local variable or method `home_path' for #<ActionView::Base:0x104401938>) on line #16 of app/views/home/index.html.erb:
+13: </p>
+14: 
+15: <div class="footer">
+16: <%= link_to "Home", home_path %> | Carnegie Mellon University | Contact Us | Site Map | About Us
+17: </div>
+
+    app/views/home/index.html.erb:16
+
+Rendered rescues/_trace (37.2ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-02 17:13:29) [GET]
+Rendering template within layouts/application
+Rendering home/index
+
+ActionView::TemplateError (undefined method `page_path' for #<ActionView::Base:0x10415c0c0>) on line #16 of app/views/home/index.html.erb:
+13: </p>
+14: 
+15: <div class="footer">
+16: <%= link_to "Home", page_path(:home) %> | Carnegie Mellon University | Contact Us | Site Map | About Us
+17: </div>
+
+    app/views/home/index.html.erb:16
+
+Rendered rescues/_trace (37.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-02 17:15:47) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-02 17:15:49) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-02 17:15:50) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-02 17:17:01) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-02 17:17:03) [GET]
+
+ActionController::RoutingError (No route matches "/www.cmu.edu" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-02 17:17:18) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-02 17:17:19) [GET]
+
+ActionController::RoutingError (No route matches "/www.cmu.edu" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-02 17:17:27) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-02 17:17:40) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-02 17:18:01) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-02 17:18:13) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
