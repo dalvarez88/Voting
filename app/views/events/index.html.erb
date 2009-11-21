@@ -1,0 +1,30 @@
+<h1>Listing events</h1>
+
+<table>
+  <tr>
+    <th>Eid</th>
+    <th>Gid</th>
+    <th>Ename</th>
+    <th>Edescription</th>
+    <th>Start date</th>
+    <th>End date</th>
+  </tr>
+
+<% @events.each do |events| %>
+  <tr>
+    <td><%=h events.eid %></td>
+    <td><%=h events.gid %></td>
+    <td><%=h events.ename %></td>
+    <td><%=h events.edescription %></td>
+    <td><%=h events.start_date %></td>
+    <td><%=h events.end_date %></td>
+    <td><%= link_to 'Show', events %></td>
+    <td><%= link_to 'Edit', edit_events_path(events) %></td>
+    <td><%= link_to 'Destroy', events, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New events', new_events_path %>

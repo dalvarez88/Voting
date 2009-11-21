@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  vid: 9.99
+  uid: 9.99
+  vflag: 9.99
+  gid: 9.99
+
+two:
+  vid: 9.99
+  uid: 9.99
+  vflag: 9.99
+  gid: 9.99

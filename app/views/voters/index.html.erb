@@ -1,0 +1,26 @@
+<h1>Listing voters</h1>
+
+<table>
+  <tr>
+    <th>Vid</th>
+    <th>Uid</th>
+    <th>Vflag</th>
+    <th>Gid</th>
+  </tr>
+
+<% @voters.each do |voters| %>
+  <tr>
+    <td><%=h voters.vid %></td>
+    <td><%=h voters.uid %></td>
+    <td><%=h voters.vflag %></td>
+    <td><%=h voters.gid %></td>
+    <td><%= link_to 'Show', voters %></td>
+    <td><%= link_to 'Edit', edit_voters_path(voters) %></td>
+    <td><%= link_to 'Destroy', voters, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New voters', new_voters_path %>

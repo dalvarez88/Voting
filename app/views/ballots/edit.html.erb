@@ -1,0 +1,28 @@
+<h1>Editing ballot</h1>
+
+<% form_for(@ballot) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :bid %><br />
+    <%= f.text_field :bid %>
+  </p>
+  <p>
+    <%= f.label :gid %><br />
+    <%= f.text_field :gid %>
+  </p>
+  <p>
+    <%= f.label :eid %><br />
+    <%= f.text_field :eid %>
+  </p>
+  <p>
+    <%= f.label :rstring %><br />
+    <%= f.text_field :rstring %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @ballot %> |
+<%= link_to 'Back', ballots_path %>

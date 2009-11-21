@@ -1,0 +1,33 @@
+<p>
+  <b>Eid:</b>
+  <%=h @events.eid %>
+</p>
+
+<p>
+  <b>Gid:</b>
+  <%=h @events.gid %>
+</p>
+
+<p>
+  <b>Ename:</b>
+  <%=h @events.ename %>
+</p>
+
+<p>
+  <b>Edescription:</b>
+  <%=h @events.edescription %>
+</p>
+
+<p>
+  <b>Start date:</b>
+  <%=h @events.start_date %>
+</p>
+
+<p>
+  <b>End date:</b>
+  <%=h @events.end_date %>
+</p>
+
+
+<%= link_to 'Edit', edit_events_path(@events) %> |
+<%= link_to 'Back', events_path %>

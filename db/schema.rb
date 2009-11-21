@@ -9,7 +9,42 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091018163815) do
+ActiveRecord::Schema.define(:version => 20091121194026) do
+
+  create_table "ballots", :force => true do |t|
+    t.decimal  "bid"
+    t.decimal  "gid"
+    t.decimal  "eid"
+    t.string   "rstring"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "events", :force => true do |t|
+    t.decimal  "eid"
+    t.decimal  "gid"
+    t.string   "ename"
+    t.string   "edescription"
+    t.datetime "start_date"
+    t.datetime "end_date"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "gadmins", :force => true do |t|
+    t.decimal  "gaid"
+    t.decimal  "uid"
+    t.decimal  "gid"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "groups", :force => true do |t|
+    t.decimal  "gid"
+    t.string   "gname"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "fname"
@@ -20,6 +55,15 @@ ActiveRecord::Schema.define(:version => 20091018163815) do
     t.string   "email"
     t.string   "year"
     t.string   "college"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "voters", :force => true do |t|
+    t.decimal  "vid"
+    t.decimal  "uid"
+    t.decimal  "vflag"
+    t.decimal  "gid"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

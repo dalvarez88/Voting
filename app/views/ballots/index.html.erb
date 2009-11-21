@@ -1,0 +1,26 @@
+<h1>Listing ballots</h1>
+
+<table>
+  <tr>
+    <th>Bid</th>
+    <th>Gid</th>
+    <th>Eid</th>
+    <th>Rstring</th>
+  </tr>
+
+<% @ballots.each do |ballot| %>
+  <tr>
+    <td><%=h ballot.bid %></td>
+    <td><%=h ballot.gid %></td>
+    <td><%=h ballot.eid %></td>
+    <td><%=h ballot.rstring %></td>
+    <td><%= link_to 'Show', ballot %></td>
+    <td><%= link_to 'Edit', edit_ballot_path(ballot) %></td>
+    <td><%= link_to 'Destroy', ballot, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New ballot', new_ballot_path %>

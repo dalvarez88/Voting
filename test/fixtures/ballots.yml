@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  bid: 9.99
+  gid: 9.99
+  eid: 9.99
+  rstring: MyString
+
+two:
+  bid: 9.99
+  gid: 9.99
+  eid: 9.99
+  rstring: MyString
