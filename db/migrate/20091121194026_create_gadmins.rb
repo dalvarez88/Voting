@@ -1,9 +1,8 @@
 class CreateGadmins < ActiveRecord::Migration
   def self.up
     create_table :gadmins do |t|
-      t.decimal :gaid
-      t.decimal :uid
-      t.decimal :gid
+      t.integer :user_id
+      t.integer :group_id
 
       t.timestamps
     end

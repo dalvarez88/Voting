@@ -1,8 +1,7 @@
 class CreateEvents < ActiveRecord::Migration
   def self.up
     create_table :events do |t|
-      t.decimal :eid
-      t.decimal :gid
+      t.integer :group_id
       t.string :ename
       t.string :edescription
       t.datetime :start_date

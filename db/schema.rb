@@ -12,17 +12,15 @@
 ActiveRecord::Schema.define(:version => 20091121194026) do
 
   create_table "ballots", :force => true do |t|
-    t.decimal  "bid"
-    t.decimal  "gid"
-    t.decimal  "eid"
+    t.integer  "group_id"
+    t.integer  "event_id"
     t.string   "rstring"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "events", :force => true do |t|
-    t.decimal  "eid"
-    t.decimal  "gid"
+    t.integer  "group_id"
     t.string   "ename"
     t.string   "edescription"
     t.datetime "start_date"
@@ -32,15 +30,13 @@ ActiveRecord::Schema.define(:version => 20091121194026) do
   end
 
   create_table "gadmins", :force => true do |t|
-    t.decimal  "gaid"
-    t.decimal  "uid"
-    t.decimal  "gid"
+    t.integer  "user_id"
+    t.integer  "group_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "groups", :force => true do |t|
-    t.decimal  "gid"
     t.string   "gname"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -60,10 +56,9 @@ ActiveRecord::Schema.define(:version => 20091121194026) do
   end
 
   create_table "voters", :force => true do |t|
-    t.decimal  "vid"
-    t.decimal  "uid"
+    t.integer  "user_id"
+    t.integer  "group_id"
     t.decimal  "vflag"
-    t.decimal  "gid"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
