@@ -1,0 +1,23 @@
+<p>
+  <b>Vid:</b>
+  <%=h @voters.vid %>
+</p>
+
+<p>
+  <b>Uid:</b>
+  <%=h @voters.uid %>
+</p>
+
+<p>
+  <b>Vflag:</b>
+  <%=h @voters.vflag %>
+</p>
+
+<p>
+  <b>Gid:</b>
+  <%=h @voters.gid %>
+</p>
+
+
+<%= link_to 'Edit', edit_voters_path(@voters) %> |
+<%= link_to 'Back', voters_path %>

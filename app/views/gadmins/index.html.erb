@@ -1,0 +1,24 @@
+<h1>Listing gadmins</h1>
+
+<table>
+  <tr>
+    <th>Gaid</th>
+    <th>Uid</th>
+    <th>Gid</th>
+  </tr>
+
+<% @gadmins.each do |gadmin| %>
+  <tr>
+    <td><%=h gadmin.gaid %></td>
+    <td><%=h gadmin.uid %></td>
+    <td><%=h gadmin.gid %></td>
+    <td><%= link_to 'Show', gadmin %></td>
+    <td><%= link_to 'Edit', edit_gadmin_path(gadmin) %></td>
+    <td><%= link_to 'Destroy', gadmin, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New gadmin', new_gadmin_path %>

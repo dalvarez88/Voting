@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  eid: 9.99
+  gid: 9.99
+  ename: MyString
+  edescription: MyString
+  start_date: 
+  end_date: 
+
+two:
+  eid: 9.99
+  gid: 9.99
+  ename: MyString
+  edescription: MyString
+  start_date: 
+  end_date: 

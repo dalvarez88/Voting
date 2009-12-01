@@ -1,0 +1,23 @@
+<p>
+  <b>Bid:</b>
+  <%=h @ballot.bid %>
+</p>
+
+<p>
+  <b>Gid:</b>
+  <%=h @ballot.gid %>
+</p>
+
+<p>
+  <b>Eid:</b>
+  <%=h @ballot.eid %>
+</p>
+
+<p>
+  <b>Rstring:</b>
+  <%=h @ballot.rstring %>
+</p>
+
+
+<%= link_to 'Edit', edit_ballot_path(@ballot) %> |
+<%= link_to 'Back', ballots_path %>

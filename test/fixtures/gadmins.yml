@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  gaid: 9.99
+  uid: 9.99
+  gid: 9.99
+
+two:
+  gaid: 9.99
+  uid: 9.99
+  gid: 9.99
