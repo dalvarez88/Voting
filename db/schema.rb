@@ -15,7 +15,8 @@ ActiveRecord::Schema.define(:version => 20091018163815) do
     t.string   "fname"
     t.string   "lname"
     t.string   "andrewID"
-    t.boolean  "admin?",     :default => false
+    t.string   "encryptedPassword"
+    t.boolean  "admin?",            :default => false
     t.datetime "last_login"
     t.string   "email"
     t.string   "year"

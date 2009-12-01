@@ -1,23 +1,12 @@
+<h1>User#login</h1>
+<p>Find me in app/views/user/login.html.erb</p>
 
 <% if flash[:message] %><div><%= flash[:message] %></div><% end %>
   
   <% if flash[:error] %><div><%= flash[:error] %></div><% end %>
-<div class="right_float_containter">    
+    
     <% form_tag :action => 'process_login' do %>
       AndrewID: <%= text_field "user", "andrewID" %>&#x00A; 
       Password: <%= password_field "user", "encryptedPassword" %>&#x00A; 
       <%= submit_tag "Login" %>
     <% end %>
-</div>
-
-<div class="center_float">
-<h1>VOTE HERE!</h1>
-</div>
-
-<p>
-<h2>Introductions and Information</h2>
-</p>
-
-<div class="footer">
-<%= link_to "Home", @home %> |<%= link_to "Carnegie Mellon University", "http://www.cmu.edu", {:target => "_blank"} %>  | Contact Us | Site Map | About Us
-</div>
