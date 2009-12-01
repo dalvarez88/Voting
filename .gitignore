@@ -1,0 +1,8 @@
+tmp
+log
+
+# SQLite databases
+db/*.sqlite3
+
+# migration log
+db/development_structure.sql
