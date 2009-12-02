@@ -9,12 +9,22 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091121194026) do
+ActiveRecord::Schema.define(:version => 20091202002738) do
 
   create_table "ballots", :force => true do |t|
     t.integer  "group_id"
     t.integer  "event_id"
     t.string   "rstring"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "candidates", :force => true do |t|
+    t.integer  "event_id"
+    t.string   "lname"
+    t.string   "fname"
+    t.string   "title"
+    t.string   "description"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -38,6 +48,8 @@ ActiveRecord::Schema.define(:version => 20091121194026) do
 
   create_table "groups", :force => true do |t|
     t.string   "gname"
+    t.integer  "public"
+    t.string   "description"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -47,7 +59,7 @@ ActiveRecord::Schema.define(:version => 20091121194026) do
     t.string   "lname"
     t.string   "andrewID"
     t.string   "encryptedPassword"
-    t.boolean  "admin?",     :default => false
+    t.boolean  "admin?",            :default => false
     t.datetime "last_login"
     t.string   "email"
     t.string   "year"

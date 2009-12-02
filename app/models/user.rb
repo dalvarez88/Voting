@@ -1,4 +1,6 @@
 class User < ActiveRecord::Base
+  has_many :group
+  
   validates_uniqueness_of :andrewID 
   validates_confirmation_of :encryptedPassword, :on => :create 
   validates_length_of :encryptedPassword, :within => 5..40
