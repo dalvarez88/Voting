@@ -4,7 +4,7 @@
   <%= f.error_messages %>
 
   <p>
-    <%= f.label :event_id, "Event_ID" %><br />
+    <%= f.label :event_id %><br />
     <%= f.text_field :event_id %>
   </p>
   <p>
