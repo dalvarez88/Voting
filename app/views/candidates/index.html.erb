@@ -1,3 +1,9 @@
+<p>
+<%= link_to image_tag("select_group.png"), {:controller => "groups"} %>
+<%= link_to image_tag("select_event.png"), "/groups/3/events"  %>
+<%= image_tag("select_candidate.png") %>
+</p>
+
 <h1>Listing candidates</h1>
 
 <table>
@@ -10,11 +16,9 @@
   <tr>
     <td><%=h candidate.fname %></td>
     <td><%=h candidate.description %></td>
-    <td><%= button_to "VOTE", :action => "quick_vote" %></td>
+    <td><%= button_to "VOTE", :action => "quick_vote", :candidate_id =>candidate.id, :candidate_name => candidate.fname %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
-
-<%= link_to 'New candidate', new_candidate_path %>

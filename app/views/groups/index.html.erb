@@ -1,7 +1,10 @@
+<p><%= image_tag("select_group.png") %>
+<%= image_tag("grey_select_event.png") %>
+<%= image_tag("grey_select_candidate.png") %>
+</p>
 <h2> Public Forum</h2>
 <table>
   <tr>
-    <th>GroupID</th>
     <th>Group Name</th>
 	<th>Group Description</th>
   </tr>
@@ -9,7 +12,6 @@
 <% @groups.each do |group| %>
  <% if (group.public == 1) %>
   <tr>
-  	<td><%=h group.id%></td>
 	
     <td><h3><%= link_to group.gname, group_events_path(group) %></h3></td>
 	
@@ -24,14 +26,12 @@
 <h2> Private Forum</h2>
 <table>
   <tr>
-    <th>GroupID</th>
     <th>Group Name</th>
 	<th>Group Description</th>
   </tr>
 <% @groups.each do |group| %>
  <% if (group.public == 0) %>
   <tr>
-  	<td><%=h group.id%></td>
     <td><h3>
     	 <%= link_to group.gname, group_events_path(group) %></h3></td>
 	<td><%=h group.description %></td>

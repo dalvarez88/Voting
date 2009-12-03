@@ -14,19 +14,20 @@
 <% if flash[:message] %><p style="color: blue"><%= flash[:message] %></p><% end %>
 <% if flash[:error] %><p style="color: red"><%= flash[:error] %></p><% end %>
  <div class="login">    
-    <% form_tag :action => 'process_login' do %>
-      AndrewID: <%= text_field "user", "andrewID", :size =>15 %> 
-      Password: <%= password_field "user", "encryptedPassword", :size =>15 %>
-      <%= submit_tag "Login" %>
-    <% end %>
+    <%# form_tag :action => 'process_login' do %>
+      <!-- AndrewID: <%# text_field "user", "andrewID", :size =>15 %>  -->
+      <!-- Password: <%# password_field "user", "encryptedPassword", :size =>15 %> -->
+      <%# submit_tag "Login" %>
+    <%# end %>
 </div>
 	<br /><%= link_to image_tag("servslogo.jpg"), :controller => "groups" %>
 
 <%= yield %>
 
-<div style="text-align: center;" id="footer">
+<p><div style="text-align: center;"><b>ALL VOTES MADE TO THIS SYSTEM WILL BE TALLIED IN 24-48 HOURS.</b></div></p>
+<p><div style="text-align: center;" id="footer">
 <%= link_to "Home", :controller => "groups" %> |<%= link_to "Carnegie Mellon University", "http://www.cmu.edu", {:target => "_blank"} %>  | Contact Us | Site Map | About Us
-</div>
+</div></p>
 </div>
 </body>
 </html>

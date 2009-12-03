@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091203040931) do
+ActiveRecord::Schema.define(:version => 20091203121555) do
 
   create_table "ballots", :force => true do |t|
     t.integer  "group_id"
@@ -50,6 +50,14 @@ ActiveRecord::Schema.define(:version => 20091203040931) do
     t.string   "gname"
     t.integer  "public"
     t.string   "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "quickvotes", :force => true do |t|
+    t.integer  "candidate_id"
+    t.string   "candidate_name"
+    t.integer  "votes",          :default => 0
     t.datetime "created_at"
     t.datetime "updated_at"
   end

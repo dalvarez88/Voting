@@ -23,7 +23,14 @@ class ApplicationController < ActionController::Base
     end
     
     def quick_vote
-      
+      #create and maybe save, a quick vote
+      @quickvote = Quickvote.new
+      @quickvote.candidate_id = params[:candidate_id]
+      @quickvote.candidate_name = params[:candidate_name]
+      @quickvote.votes += 1
+      @quickvote.save
+      flash[:notice] = 'Your vote has been counted! If you haven\'t already, please vote now in the other events.'
+      redirect_to "/groups/3/events"
     end
     
   # Scrub sensitive parameters from your log
