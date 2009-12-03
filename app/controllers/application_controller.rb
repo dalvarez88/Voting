@@ -21,6 +21,11 @@ class ApplicationController < ActionController::Base
         redirect_to :action => 'index', :andrewID => params[:user][:andrewID] 
       end
     end
+    
+    def quick_vote
+      
+    end
+    
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password
   

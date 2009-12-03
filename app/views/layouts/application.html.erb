@@ -10,9 +10,9 @@
 <body style="background: #EEEEEE;">
 <div style="width: 760px; margin-left: auto; margin-right: auto;">
 
-<% if flash[:message] %><p style="color: green"><%= flash[:notice] %></p><% end %>
+<% if flash[:notice] %><p style="color: green"><%= flash[:notice] %></p><% end %>
 <% if flash[:message] %><p style="color: blue"><%= flash[:message] %></p><% end %>
-<% if flash[:message] %><p style="color: red"><%= flash[:error] %></p><% end %>
+<% if flash[:error] %><p style="color: red"><%= flash[:error] %></p><% end %>
  <div class="login">    
     <% form_tag :action => 'process_login' do %>
       AndrewID: <%= text_field "user", "andrewID", :size =>15 %> 
@@ -20,13 +20,12 @@
       <%= submit_tag "Login" %>
     <% end %>
 </div>
-	<h1>SERVS</h1>
-	<h2>&nbsp&nbsp&nbsp Secure Electronic Remote Voting System </h2>
+	<br /><%= link_to image_tag("servslogo.jpg"), :controller => "groups" %>
 
 <%= yield %>
 
 <div style="text-align: center;" id="footer">
-<%= link_to "Home", @home %> |<%= link_to "Carnegie Mellon University", "http://www.cmu.edu", {:target => "_blank"} %>  | Contact Us | Site Map | About Us
+<%= link_to "Home", :controller => "groups" %> |<%= link_to "Carnegie Mellon University", "http://www.cmu.edu", {:target => "_blank"} %>  | Contact Us | Site Map | About Us
 </div>
 </div>
 </body>

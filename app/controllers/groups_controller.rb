@@ -1,4 +1,5 @@
 class GroupsController < ApplicationController
+  before_filter :set_user
   # GET /groups
   # GET /groups.xml
   def index
