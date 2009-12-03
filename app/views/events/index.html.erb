@@ -1,3 +1,8 @@
+<head> 
+	<h1>SERVS</h1>
+	<h2>&nbsp&nbsp&nbsp Secure Electronic Remote Voting System </h2>
+</head>
+
 <h1>Listing events</h1>
 
 <table>
@@ -10,8 +15,11 @@
   </tr>
 <% @events.each do |events| %>
   <tr>
-  	<td><%=h events.group_id %>||</td>
-    <td><%=h events.ename %>||</td>
+  	<td><%=h events.group_id %>	||</td>
+    <td><%=h events.ename %>
+		<%= link_to "candidates", :controller => 'candidates', 
+						  :action => 'index'%>||					  
+	</td>
 	<td><%=h events.edescription %>||</td>
 	<td><%=h events.start_date %>||</td>
 	<td><%=h events.end_date %>||</td>
@@ -20,3 +28,7 @@
 </table>
 
 <br />
+
+<div id="footer">
+<%= link_to "Home", @home %> |<%= link_to "Carnegie Mellon University", "http://www.cmu.edu", {:target => "_blank"} %>  | Contact Us | Site Map | About Us
+</div>

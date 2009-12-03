@@ -1,6 +1,7 @@
-<h1>Your groups</h1>
-<br>
-<br>
+<head> 
+	<h1>SERVS</h1>
+	<h2>&nbsp&nbsp&nbsp Secure Electronic Remote Voting System </h2>
+</head>
 
 <h2> Public Forum</h2>
 <table>
@@ -14,11 +15,10 @@
  <% if (group.public == 1) %>
   <tr>
   	<td><%=h group.id%> ||</td>
-    <td><h3><%=h group.gname %>
-	<%= link_to "Check for Events", :controller => 'events', 
-						      :action => 'index',
-							  :id => 'group'%>
+	
+    <td><h3><%=h group.gname %><%= link_to "check events", :controller => 'events', :id => 'group'%>
 	||</h3></td>
+	
 	<td><%=h group.description %> ||</td>
   </tr>
   <%end%>
@@ -51,3 +51,6 @@
 </table>
 <br />
 
+<div id="footer">
+<%= link_to "Home", @home %> |<%= link_to "Carnegie Mellon University", "http://www.cmu.edu", {:target => "_blank"} %>  | Contact Us | Site Map | About Us
+</div>
