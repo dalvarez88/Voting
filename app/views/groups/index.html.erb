@@ -16,12 +16,13 @@
   <tr>
   	<td><%=h group.id%> ||</td>
 	
-    <td><h3><%=h group.gname %><%= link_to "check events", :controller => 'events', :id => 'group'%>
+    <td><h3>
+      <%= link_to group.gname, group_events_path(group) %> 
 	||</h3></td>
 	
 	<td><%=h group.description %> ||</td>
   </tr>
-  <%end%>
+  <% end %>
 <% end %>
 </table>
 

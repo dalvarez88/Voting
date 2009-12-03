@@ -13,16 +13,15 @@
     <th>Start date</th>
 	<th>End date</th>
   </tr>
-<% @events.each do |events| %>
+<% @events.each do |event| %>
   <tr>
-  	<td><%=h events.group_id %>	||</td>
-    <td><%=h events.ename %>
-		<%= link_to "candidates", :controller => 'candidates', 
-						  :action => 'index'%>||					  
+  	<td><%=h event.group_id %>	||</td>
+    <td><%=h event.ename %>
+		<%= link_to "candidates", :controller => 'candidates', :action => 'index' %> ||					  
 	</td>
-	<td><%=h events.edescription %>||</td>
-	<td><%=h events.start_date %>||</td>
-	<td><%=h events.end_date %>||</td>
+	<td><%=h event.edescription %>||</td>
+	<td><%=h event.start_date %>||</td>
+	<td><%=h event.end_date %>||</td>
   </tr>
 <% end %>
 </table>

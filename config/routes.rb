@@ -9,7 +9,7 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resources :ballots
 
-  map.resources :groups
+  map.resources :groups, :has_many => :events
 
   # The priority is based upon order of creation: first created -> highest priority.
 

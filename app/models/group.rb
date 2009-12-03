@@ -1,5 +1,5 @@
 class Group < ActiveRecord::Base
-  has_many :event
+  has_many :events
   belongs_to :user
   belongs_to :gadmin
   

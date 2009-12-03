@@ -10,4 +10,8 @@ class GroupsController < ApplicationController
     end
   end
 
+  private
+    def find_group
+      @group = Group.find(params[:id])
+    end
 end
