@@ -1,22 +1,12 @@
-<head> 
-	<h1>SERVS</h1>
-	<h2>&nbsp&nbsp&nbsp Secure Electronic Remote Voting System </h2>
-</head>
-
-<% if flash[:message] %><div><%= flash[:message] %></div><% end %>
-  
-  <% if flash[:error] %><div><%= flash[:error] %></div><% end %>
-  
 <div class="right_float_containter">    
     <% form_tag :action => 'process_login' do %>
-      AndrewID: <%= text_field "user", "andrewID" %>&#x00A; 
-      Password: <%= password_field "user", "encryptedPassword" %>&#x00A; 
+      AndrewID: <%= text_field "user", "andrewID" %> 
+      Password: <%= password_field "user", "encryptedPassword" %>
       <%= submit_tag "Login" %>
     <% end %>
 </div>
 
-
-<h3> /*test*/ </h3>
+  
 <p>
 	<%= link_to "groups", :controller => 'groups', 
 						  :action => 'index'%>
@@ -32,6 +22,3 @@
 						  :action => 'login'%>
 </p>
 
-<div id="footer">
-<%= link_to "Home", @home %> |<%= link_to "Carnegie Mellon University", "http://www.cmu.edu", {:target => "_blank"} %>  | Contact Us | Site Map | About Us
-</div>

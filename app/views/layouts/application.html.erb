@@ -9,9 +9,18 @@
 </head>
 <body style="background: #EEEEEE;">
 
-<p style="color: green"><%= flash[:notice] %></p>
+<% if flash[:message] %><p style="color: green"><%= flash[:notice] %></p><% end %>
+<% if flash[:message] %><p style="color: blue"><%= flash[:message] %></p><% end %>
+<% if flash[:message] %><p style="color: red"><%= flash[:error] %></p><% end %>
+ 
+	<h1>SERVS</h1>
+	<h2>&nbsp&nbsp&nbsp Secure Electronic Remote Voting System </h2>
 
 <%= yield %>
+
+<div id="footer">
+<%= link_to "Home", @home %> |<%= link_to "Carnegie Mellon University", "http://www.cmu.edu", {:target => "_blank"} %>  | Contact Us | Site Map | About Us
+</div>
 
 </body>
 </html>

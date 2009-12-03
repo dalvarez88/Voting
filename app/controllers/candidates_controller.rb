@@ -2,7 +2,10 @@ class CandidatesController < ApplicationController
   # GET /candidates
   # GET /candidates.xml
   def index
-    @candidates = Candidate.all
+    # @candidates = Candidate.all
+    
+    @event = Event.find(params[:event_id])
+    @candidates = @event.candidates
 
     respond_to do |format|
       format.html # index.html.erb

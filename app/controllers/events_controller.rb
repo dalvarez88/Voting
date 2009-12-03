@@ -12,5 +12,5 @@ class EventsController < ApplicationController
       format.xml  { render :xml => @events }
     end
   end
-
+  
 end

@@ -7,7 +7,7 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resources :voters
 
-  map.resources :events
+  map.resources :events, :has_many => :candidates
 
   map.resources :ballots
 
