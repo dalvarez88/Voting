@@ -16,8 +16,8 @@
 <% @events.each do |event| %>
   <tr>
   	<td><%=h event.group_id %>	||</td>
-    <td>
-    	<%= link_to event.ename, event_candidates_path(event) %> 			  
+    <td><%=h event.ename %>
+		<%= link_to "candidates", :controller => 'candidates', :action => 'index' %> ||					  
 	</td>
 	<td><%=h event.edescription %>||</td>
 	<td><%=h event.start_date %>||</td>

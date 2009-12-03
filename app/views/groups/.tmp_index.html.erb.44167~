@@ -39,8 +39,10 @@
  <% if (group.public == 0) %>
   <tr>
   	<td><%=h group.id%> ||</td>
-    <td><h3>
-    	 <%= link_to group.gname, group_events_path(group) %> 
+    <td><h3><%=h group.gname %>
+	<%= link_to "Check for Events", :controller => 'events', 
+						      :action => 'index',
+							  :id => 'group'%>
 	||</h3></td>
 	<td><%=h group.description %> ||</td>
   </tr>

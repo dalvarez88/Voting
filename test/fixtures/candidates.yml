@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  event_id: 1
+  lname: MyString
+  fname: MyString
+  title: MyString
+  description: MyString
+
+two:
+  event_id: 1
+  lname: MyString
+  fname: MyString
+  title: MyString
+  description: MyString

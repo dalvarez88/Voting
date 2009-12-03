@@ -23,6 +23,11 @@
 </p>
 
 <p>
+	<%= link_to "events", :controller => 'events', 
+						  :action => 'index'%>
+</p>
+
+<p>
 	<%= link_to "candidates", :controller => 'candidates', 
 						  :action => 'index'%>
 </p>

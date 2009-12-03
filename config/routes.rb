@@ -1,6 +1,8 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :candidates
 
+  map.resources :candidates
+
   map.resources :gadmins
 
   map.resources :voters

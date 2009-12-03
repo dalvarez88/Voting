@@ -1,0 +1,28 @@
+<p>
+  <b>Event:</b>
+  <%=h @candidate.event_id %>
+</p>
+
+<p>
+  <b>Lname:</b>
+  <%=h @candidate.lname %>
+</p>
+
+<p>
+  <b>Fname:</b>
+  <%=h @candidate.fname %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%=h @candidate.title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @candidate.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_candidate_path(@candidate) %> |
+<%= link_to 'Back', candidates_path %>
