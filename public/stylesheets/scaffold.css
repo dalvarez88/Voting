@@ -22,9 +22,9 @@ a:hover { color: #fff; background-color:#000; }
   display: table;
 }
 
-.right_float_containter
+.login
 {
-	float: right;
+	text-align: right;
 }
 
 #errorExplanation {

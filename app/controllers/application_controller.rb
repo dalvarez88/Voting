@@ -2,7 +2,7 @@
 # Likewise, all the methods added will be available for all controllers.
 
 class ApplicationController < ActionController::Base
-  before_filter :set_user
+  before_filter :set_user, :unless => "login"
   helper :all # include all helpers, all the time
   protect_from_forgery # See ActionController::RequestForgeryProtection for details
 
@@ -13,6 +13,7 @@ class ApplicationController < ActionController::Base
 
     def process_login
       if user = User.authenticate(params[:user])
+        flash[:message] = 'Successful login!'
         session[:id] = user.id # Remember the user's id during this session
         redirect_to session[:return_to] || '/' 
       else
